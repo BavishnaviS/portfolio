@@ -1,0 +1,187 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Clean, professional font */
+  background-color: #f4f7fb; /* Light, neutral background */
+  color: #333; /* Dark gray text for readability */
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Lora', serif; /* Elegant serif font for headings */
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Header Styles */
+.header {
+  background: linear-gradient(90deg, #2a3d66, #576f92); /* Deep blue to soft slate gradient */
+  color: white;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.header nav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+.header nav a:hover {
+  color: #ff9f00; /* Warm yellow-orange on hover */
+  text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+  padding: 60px;
+  margin: 30px auto;
+  max-width: 1000px;
+  background-color: #ffffff; /* White background for clarity */
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+section h2 {
+  font-size: 32px;
+  color: #2a3d66; /* Base color from header */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* About Section */
+#about {
+  background: #f8e1f4; /* Light pink background */
+}
+
+#about .card {
+  background: #ffffff; /* Card background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
+  width: 48%; /* Making the cards almost equal width */
+  transition: transform 0.3s ease-in-out;
+}
+
+#about .card:hover {
+  transform: translateY(-10px); /* Hover effect for cards */
+}
+
+#about h2 {
+  color: #2a3d66; /* Base color for titles */
+}
+
+/* Skills Section */
+#skills {
+  background: linear-gradient(145deg, #ff9a8b, #ff6a88); /* Lavish gradient from pink to red */
+  font-family: 'Source Code Pro', monospace; /* Techy, modern font */
+}
+
+#skills .card {
+  background: #ffffff; /* Card background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
+  width: 48%; /* Same width for consistency */
+  transition: transform 0.3s ease-in-out;
+}
+
+#skills .card:hover {
+  transform: translateY(-10px); /* Hover effect for cards */
+}
+
+#skills h2 {
+  color: #fff; /* White text for the title */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Soft shadow for titles */
+}
+
+/* Projects Section */
+#projects {
+  background: linear-gradient(145deg, #6a82fb, #fc5c7d); /* Lavish gradient from blue to pink */
+}
+
+#projects .card {
+  background: #ffffff; /* Card background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
+  width: 48%; /* Same width for consistency */
+  transition: transform 0.3s ease-in-out;
+}
+
+#projects .card:hover {
+  transform: translateY(-10px); /* Hover effect for cards */
+}
+
+#projects h2 {
+  color: #fff; /* White text for the title */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Soft shadow for titles */
+}
+
+/* Contact Section */
+#contact {
+  background: linear-gradient(135deg, #9c5b3b, #d88e52); /* Earthy brown gradient */
+}
+
+#contact h2 {
+  color: white;
+}
+
+#contact a {
+  color: #ff9f00; /* Highlighted accent color for links */
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+#contact a:hover {
+  color: #fff59d; /* Light yellow on hover */
+  text-decoration: underline;
+}
+
+/* Buttons */
+button {
+  padding: 12px 25px;
+  font-size: 18px;
+  background: #2a3d66; /* Base color for button */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #4b6486; /* Slightly lighter blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+    padding: 40px;
+  }
+
+  .header nav a {
+    font-size: 16px;
+    margin: 0 15px;
+  }
+
+  #about .card, #skills .card, #projects .card {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
